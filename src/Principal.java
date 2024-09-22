@@ -10,54 +10,49 @@ public class Principal {
         Pelicula miPelicula = new Pelicula();
         miPelicula.setNombre("Encanto");
         miPelicula.setFechaDeLanzamiento(2021);
-        miPelicula.setDuracionEnMinutos(120);
-        miPelicula.setIncluidoEnElPlan(true);
+        miPelicula.setDuracionEnMinutos(180);
+        System.out.println("Duración de la película: " + miPelicula.getDuracionEnMinutos());
 
         miPelicula.muestraFichaTecnica();
+        miPelicula.evalua(8);
+        miPelicula.evalua(5);
         miPelicula.evalua(10);
-        miPelicula.evalua(10);
-        miPelicula.evalua(7.8);
-        System.out.println("Média de evaluaciones de la película: " +miPelicula.calculaMedia());
+        System.out.println("Total de evaluaciones: " + miPelicula.getTotalDeEvaluaciones());
+        System.out.println(miPelicula.calculaMediaEvaluaciones());
 
-        Serie casaDragon = new  Serie();
-        casaDragon.setNombre ("La casa del Dragon");
-        casaDragon.setFechaDeLanzamiento(2022);
-        casaDragon.setTemporadas(1);
-        casaDragon.setMinutosPorEpisodio(50);
-        casaDragon.setEpisodiosPorTemporada(10);
-        casaDragon.muestraFichaTecnica();
-        System.out.println(casaDragon.getDuracionEnMinutos());
+
+        Serie lost = new Serie();
+        lost.setNombre("Lost");
+        lost.setFechaDeLanzamiento(2000);
+        lost.muestraFichaTecnica();
+        lost.setTemporadas(10);
+        lost.setEpisodiosPorTemporada(10);
+        lost.setMinutosPorEpisodio(50);
+        System.out.println("Duracion de la série: " + lost.getDuracionEnMinutos());
 
         Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
-        otraPelicula.setFechaDeLanzamiento(1998);
-        otraPelicula.setDuracionEnMinutos(180);
+        otraPelicula.setNombre("Avatar");
+        otraPelicula.setFechaDeLanzamiento(2023);
+        otraPelicula.setDuracionEnMinutos(200);
 
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluido(miPelicula);
+        calculadora.incluido(otraPelicula);
+        calculadora.incluido(lost);
+        System.out.println(calculadora.getTiempoTotal());
 
+        FiltroRecomendacion filtro = new FiltroRecomendacion();
+        filtro.filtra(miPelicula);
 
         Episodio episodio = new Episodio();
         episodio.setNumero(1);
-        episodio.setNombre("La casa Targaryen");
-        episodio.setSerie(casaDragon);
-        episodio.setTotalVisualizaciones(50);
+        episodio.setSerie(lost);
+        episodio.setTotalVisualizaciones(300);
+        filtro.filtra(episodio);
 
-        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
-        filtroRecomendacion.filtra(miPelicula);
-
-        filtroRecomendacion.filtra(episodio);
-
-
-
-
-
-        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
-        calculadora.incluye(miPelicula);
-        calculadora.incluye(casaDragon);
-        calculadora.incluye(otraPelicula);
-        System.out.println("Tiempo necesario para ver tus tilulos estas vacaciones "
-                + calculadora.getTiempoTotal() + " minutos");
-
-
-
+        Pelicula peliculaDeBruno = new Pelicula();
+        peliculaDeBruno.setNombre("El Senor de los Anillos");
+        peliculaDeBruno.setDuracionEnMinutos(180);
+        peliculaDeBruno.setFechaDeLanzamiento(2001);
     }
 }

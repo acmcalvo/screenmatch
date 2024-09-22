@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="007cfd55-203f-4793-a802-d95195404007" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
+    <list default="true" id="007cfd55-203f-4793-a802-d95195404007" name="Changes" comment="add Clasificacion Episodio and Filtro recomndacion">
+      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/Clasificable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/CalculadoraDeTiempo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/CalculadoraDeTiempo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/Clasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/FiltroRecomendacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/FiltroRecomendacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Episodio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Episodio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelos/Titulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +43,9 @@
     "accountId": "7200b362-4928-4fbd-aeb9-f05d4ddfdae7"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -76,6 +86,63 @@
       <option name="presentableId" value="Default" />
       <updated>1726784525528</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update code to add private">
+      <option name="closed" value="true" />
+      <created>1726792853649</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726792853649</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update code to use encapsulation (Getter and setter)">
+      <option name="closed" value="true" />
+      <created>1726794979778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726794979778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update code to use encapsulation  add Seria and Titulo to start using OOP">
+      <option name="closed" value="true" />
+      <created>1726870038397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726870038398</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update code to use encapsulation  add Seria and Titulo to start using OOP">
+      <option name="closed" value="true" />
+      <created>1726870061757</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726870061758</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create CalculadoraDeTiempo">
+      <option name="closed" value="true" />
+      <created>1726872929672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726872929673</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add Clasificacion Episodio and Filtro recomndacion">
+      <option name="closed" value="true" />
+      <created>1726876759758</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726876759758</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add Clasificacion Episodio and Filtro recomndacion">
+      <option name="closed" value="true" />
+      <created>1726876784154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726876784154</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +155,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update code to add private" />
+    <MESSAGE value="Update code to use encapsulation (Getter and setter)" />
+    <MESSAGE value="Update code to use encapsulation  add Seria and Titulo to start using OOP" />
+    <MESSAGE value="Create CalculadoraDeTiempo" />
+    <MESSAGE value="add Clasificacion Episodio and Filtro recomndacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Clasificacion Episodio and Filtro recomndacion" />
   </component>
 </project>

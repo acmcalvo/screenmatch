@@ -1,19 +1,24 @@
 package com.aluracursos.screenmatch.calculos;
 
-import com.aluracursos.screenmatch.modelos.Pelicula;
-import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.modelos.Titulo;
 
 public class CalculadoraDeTiempo {
     private int tiempoTotal;
 
     public int getTiempoTotal() {
-        return tiempoTotal;
+        return this.tiempoTotal;
     }
 
-    public void incluye(Titulo titulo){
+//    public void incluido(Filme f) {
+//        this.tiempoTotal += f.getDuracionEnMinutos();
+//    }
+//
+//    public void incluido(Serie s) {
+//        this.tiempoTotal += s.getDuracionEnMinutos();
+//    }
+
+    public void incluido(Titulo titulo) {
+        System.out.println("Agregando duración en minutos de " + titulo);
         this.tiempoTotal += titulo.getDuracionEnMinutos();
     }
-
-
 }
