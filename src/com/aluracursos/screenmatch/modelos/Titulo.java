@@ -1,6 +1,6 @@
 package com.aluracursos.screenmatch.modelos;
 
-public class Titulo implements Comparable<Titulo> {
+public class Titulo implements Comparable<Titulo>{
     private String nombre;
     private int fechaDeLanzamiento;
     private boolean incluidoEnElPlan;
